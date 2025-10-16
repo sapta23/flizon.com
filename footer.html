@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    footer {
+        background-color: #012546;
+        color: #f8f9fa;
+        padding: 1rem 0; /* Reduced padding for smaller height */
+        width: 100%; /* Full width */
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    footer h6 {
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+        color: #ffffff;
+        font-size: 0.9rem;
+    }
+
+    footer ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.8;
+    }
+
+    footer ul li a {
+        color: #8d8a8a;
+        text-decoration: none;
+        font-size: 0.85rem;
+    }
+
+    footer ul li a:hover {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    footer .text-md-end img {
+        width: 35px;
+        height: auto;
+        border-radius: 12%;
+        margin: 0 4px;
+    }
+
+    footer .text-md-end img:last-child {
+        margin-right: 0;
+    }
+
+    .horizontal-line {
+        height: 1px;
+        background-color: #ffffff33;
+        margin: 1rem 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.85rem;
+        margin: 0.5rem 0 0 0;
+    }
+
+    @media (max-width: 768px) {
+        footer .text-md-end {
+            text-align: left;
+            margin-top: 1rem;
+        }
+        footer .social-icons {
+            margin-top: 0.5rem;
+        }
+    }
+  </style>
+</head>
+<body>
+  <footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <h6>ABOUT</h6>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Corporate Info</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>HELP</h6>
+                <ul>
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Cancellation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>POLICY</h6>
+                <ul>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>SOCIAL</h6>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <h6>Registered Office Address:</h6>
+                <address style="font-size:0.8rem;line-height:1.4;">
+                    Flizon India Private Limited,<br>
+                    Kolkata, 700008,<br>
+                    West Bengal, India<br>
+                    CIN: U51109KA2012PTC066107<br>
+                    Telephone: 044-45614700 / 044-67415800
+                </address>
+            </div>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h6>Follow Us</h6>
+                <div class="social-icons">
+                    <a href="#"><img src="{% static 'icons/facebook.png' %}" alt="Facebook"></a>
+                    <a href="#"><img src="{% static 'icons/instagram.png' %}" alt="Instagram"></a>
+                    <a href="#"><img src="{% static 'icons/youtube.png' %}" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="col-md-8 text-md-end mt-2 mt-md-0">
+                <img src="{% static 'icons/visa.png' %}" alt="Visa">
+                <img src="{% static 'icons/mastercard.png' %}" alt="Mastercard">
+                <img src="{% static 'icons/american_express.png' %}" alt="Amex">
+                <img src="{% static 'icons/net_banking.png' %}" alt="Netbanking">
+                <img src="{% static 'icons/rupay.png' %}" alt="Rupay">
+                <img src="{% static 'icons/paypal.png' %}" alt="PayPal">
+                <img src="{% static 'icons/cash_on_delivery.png' %}" alt="COD">
+                <img src="{% static 'icons/easy_emi_options.png' %}" alt="EMI">
+            </div>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <div class="text-center">
+            <p>&copy; 2024-2025 All rights reserved. Flizon.com</p>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
